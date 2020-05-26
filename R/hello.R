@@ -15,8 +15,8 @@
 
 npCBPS_neo <- function(y,x) {
   library(CBPS)
-  #print("X:", dim(X))
-  return(1/(length(y)*unlist(npCBPS(y~x)['weights'])))
+  invisible(capture.output(fit <- npCBPS(y~x)))
+  return(1/(length(y)*unlist(fit['weights'])))
 }
 
 gam_neo <- function(a,ps,y,a_out) {
