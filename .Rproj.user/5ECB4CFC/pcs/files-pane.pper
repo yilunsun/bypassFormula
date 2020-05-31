@@ -1,9 +1,9 @@
 {
-    "path" : "~/Box/Dropbox/Research/BayesianCART/R/bypassFormula/R",
-    "sortOrder" : [
+    "path": "~/Box/Dropbox/Research/BayesianCART/R/bypassFormula/R",
+    "sortOrder": [
         {
-            "ascending" : true,
-            "columnIndex" : 2
+            "ascending": true,
+            "columnIndex": 2
         }
     ]
 }

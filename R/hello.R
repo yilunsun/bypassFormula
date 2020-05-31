@@ -19,6 +19,12 @@ npCBPS_neo <- function(y,x) {
   return(1/(length(y)*unlist(fit['weights'])))
 }
 
+GPS_neo <- function(y,x) {
+  library(CBPS)
+  invisible(capture.output(fit <- CBPS(y~x, method = "exact")))
+  return(1/(length(y)*unlist(fit['weights'])))
+}
+
 gam_neo <- function(a,ps,y,a_out) {
   library(mgcv)
   fit <- gam(y~s(a)+s(ps,by=a))
